@@ -1,0 +1,654 @@
+/* General */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-80px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #0077cc;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #0077cc;
+}
+
+.nav-actions button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-actions button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.login-btn {
+  background: transparent;
+  border: 1px solid #0077cc;
+  color: #0077cc;
+}
+
+.register-btn {
+  background: linear-gradient(90deg, #0077cc, #00cc88);
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url("https://www.transparenttextures.com/patterns/cubes.png") #eef6ff;
+  background-size: cover;
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #0077cc;
+}
+
+.highlight.green {
+  color: #00aa66;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #fff;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.tag:hover {
+  transform: translateY(-5px);
+  background: #f1faff;
+}
+
+.blue { color: #0077cc; }
+.green { color: #00aa66; }
+.red { color: #cc0000; }
+
+/* Login Buttons */
+.login-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.tourist-login,
+.authority-login {
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yaar-heading {
+  font-size: 25rem;   /* large heading */
+  font-weight: 800;
+  text-align: center;
+  margin: 40px 0;
+  background: linear-gradient(90deg, #0077cc, #00aa66); /* same as tourist-login */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tourist-login {
+  background: #0077cc;
+  color: white;
+  border: none;
+}
+
+.authority-login {
+  background: white;
+  color: #00aa66;
+  border: 2px solid #00aa66;
+}
+
+.tourist-login:hover,
+.authority-login:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.register-text {
+  font-size: 0.9rem;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 50px 40px;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeUp 1s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.feature-card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  margin: 0 0 10px;
+  color: #0077cc;
+}
+.google-login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgb(32, 234, 234);
+  color: #444;
+  border: 1px solid #ddd;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.google-login:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  background: #f8f8f8;
+}
+
+/* =========================
+   HERO SECTION (YAAR -> Travel Safe style)
+   ========================= */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: url("https://www.transparenttextures.com/patterns/world-map.png") no-repeat center center / cover,
+              linear-gradient(135deg, #f0f8ff, #eaf6ff);
+  animation: fadeIn 1.2s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Main Heading */
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #0077cc, #00aa66);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+/* Sub-heading */
+.hero h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #006400; /* green for AI Atithi Rakshak */
+  margin-bottom: 20px;
+}
+
+/* Description */
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 12px 24px;
+  border-radius: 25px;
+  background: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.tag:hover {
+  transform: translateY(-5px);
+  background: #f1faff;
+}
+
+.blue { color: #0077cc; }
+.green { color: #00aa66; }
+.red { color: #cc0000; }
+
+/* Login Buttons */
+.login-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.tourist-login {
+  background: linear-gradient(90deg, #0077cc, #00cc88);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tourist-login:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.authority-login {
+  background: white;
+  color: #00aa66;
+  border: 2px solid #00aa66;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.authority-login:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.google-login {
+  background: #20eaea;
+  color: #222;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.google-login:hover {
+  background: #00cccc;
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Register text */
+.register-text {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 15px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, #0057b7, #00897b); /* Blue → Soft Teal */
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.04);
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links li {
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ffcc00; /* Golden underline */
+  transition: width 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #ffcc00;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+/* Buttons */
+.nav-actions button {
+  margin-left: 12px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Login = Outlined */
+.login-btn {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.login-btn:hover {
+  background: rgba(255,255,255,0.1);
+  transform: scale(1.05);
+}
+
+/* Register = Gradient pill */
+.register-btn {
+  background: linear-gradient(90deg, #ff7043, #ffa726); /* Coral → Orange */
+  border: none;
+  color: #fff;
+}
+
+.register-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Brand text only */
+.brand-text {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.brand-text .blue {
+  color: #0056b3;
+}
+
+.brand-text .green {
+  color: #009966;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  color: #444;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-links li:hover {
+  color: #0056b3;
+}
+
+/* Right side (Lang + Login + Register) */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.lang-select {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.login-link {
+  cursor: pointer;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.login-link:hover {
+  color: #0056b3;
+}
+
+.register-btn {
+  background: linear-gradient(90deg, #0077cc, #00cc88);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 18px 40px;   /* more padding for taller navbar */
+  font-size: 1.2rem;    /* base size for all text */
+}
+
+/* Brand text */
+.brand-text {
+  font-size: 1.6rem;   /* bigger brand name */
+  font-weight: bold;
+}
+
+.brand-text .blue {
+  color: #0077cc;
+}
+
+.brand-text .green {
+  color: #00aa66;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  gap: 50px;           /* spacing between nav items */
+  list-style: none;
+}
+
+.nav-links li {
+  font-size: 1.2rem;   /* increase size of links */
+  cursor: pointer;
+  color: #444;
+  transition: color 0.2s ease;
+}
+
+.nav-links li:hover {
+  color: #0077cc;
+}
+
+/* Actions (language + login + register) */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;           /* spacing between elements */
+  font-size: 1.1rem;
+}
+
+.login-link {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Register button */
+.register-btn {
+  background: linear-gradient(90deg, #0077cc, #00aa66);
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.register-btn:hover {
+  transform: scale(1.05);
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #eaf6ff url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/2000px-World_map_-_low_resolution.svg.png")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+/* Optional light overlay so content is readable */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(234, 246, 255, 0.5); /* control opacity */
+  z-index: -1;
+}
