@@ -13,8 +13,7 @@ function Navbar() {
     <nav className="navbar">
       {/* Brand name */}
       <div className="brand-text">
-        <span className="blue">🌐Smart</span>
-        <span className="green">TourSafe</span>
+        <span className="gradient-text">🌐YAAR</span>
       </div>
 
       {/* Middle: Navigation links */}

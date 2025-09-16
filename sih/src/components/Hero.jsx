@@ -3,7 +3,7 @@ import React from "react";
 function Hero() {
   return (
     <section className="hero">
-      <h1 className="yaar-heading">YAAR -Your AI Atithi Rakshak</h1>
+      <h1 className="https://github.com/JahnaviNaiduu/SIH.git">YAAR -Your AI Atithi Rakshak</h1>
 
       <p>Wherever you go, we've got your back.</p>
 
