@@ -14,7 +14,7 @@ body {
   align-items: center;
   padding: 15px 40px;
   background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -22,8 +22,14 @@ body {
 }
 
 @keyframes slideDown {
-  from { transform: translateY(-80px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .logo {
@@ -64,7 +70,7 @@ body {
 
 .nav-actions button:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .login-btn {
@@ -82,14 +88,21 @@ body {
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: url("https://www.transparenttextures.com/patterns/cubes.png") #eef6ff;
+  background: url("https://www.transparenttextures.com/patterns/cubes.png")
+    #eef6ff75;
   background-size: cover;
   animation: fadeIn 1.2s ease;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero h1 {
@@ -123,9 +136,9 @@ body {
 .tag {
   padding: 10px 20px;
   border-radius: 20px;
-  background: #fff;
+  background: #ffffffb5;
   font-weight: 500;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
@@ -134,9 +147,15 @@ body {
   background: #f1faff;
 }
 
-.blue { color: #0077cc; }
-.green { color: #00aa66; }
-.red { color: #cc0000; }
+.blue {
+  color: #0077cc;
+}
+.green {
+  color: #00aa66;
+}
+.red {
+  color: #cc0000;
+}
 
 /* Login Buttons */
 .login-options {
@@ -156,11 +175,15 @@ body {
 }
 
 .yaar-heading {
-  font-size: 25rem;   /* large heading */
+  font-size: 25rem; /* large heading */
   font-weight: 800;
   text-align: center;
   margin: 40px 0;
-  background: linear-gradient(90deg, #0077cc, #00aa66); /* same as tourist-login */
+  background: linear-gradient(
+    90deg,
+    #0077cc,
+    #00aa66
+  ); /* same as tourist-login */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -181,7 +204,7 @@ body {
 .tourist-login:hover,
 .authority-login:hover {
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .register-text {
@@ -201,19 +224,25 @@ body {
   padding: 20px;
   border-radius: 12px;
   text-align: left;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   animation: fadeUp 1s ease;
 }
 
 .feature-card:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .feature-card .icon {
@@ -241,7 +270,7 @@ body {
 
 .google-login:hover {
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   background: #f8f8f8;
 }
 
@@ -251,15 +280,22 @@ body {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: url("https://www.transparenttextures.com/patterns/world-map.png") no-repeat center center / cover,
-              linear-gradient(135deg, #f0f8ff, #eaf6ff);
+  background: url("https://www.transparenttextures.com/patterns/world-map.png")
+      no-repeat center center / cover,
+    linear-gradient(135deg, #f0f8ff, #eaf6ff);
   animation: fadeIn 1.2s ease;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Main Heading */
@@ -303,7 +339,7 @@ body {
   background: #fff;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
@@ -312,9 +348,15 @@ body {
   background: #f1faff;
 }
 
-.blue { color: #0077cc; }
-.green { color: #00aa66; }
-.red { color: #cc0000; }
+.blue {
+  color: #0077cc;
+}
+.green {
+  color: #00aa66;
+}
+.red {
+  color: #cc0000;
+}
 
 /* Login Buttons */
 .login-options {
@@ -338,7 +380,7 @@ body {
 
 .tourist-login:hover {
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .authority-login {
@@ -354,7 +396,7 @@ body {
 
 .authority-login:hover {
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .google-login {
@@ -371,7 +413,7 @@ body {
 .google-login:hover {
   background: #00cccc;
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Register text */
@@ -388,7 +430,7 @@ body {
   align-items: center;
   padding: 15px 40px;
   background: linear-gradient(90deg, #0057b7, #00897b); /* Blue → Soft Teal */
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -461,7 +503,7 @@ body {
 }
 
 .login-btn:hover {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   transform: scale(1.05);
 }
 
@@ -474,7 +516,7 @@ body {
 
 .register-btn:hover {
   transform: scale(1.08);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
 /* Navbar container */
@@ -484,7 +526,7 @@ body {
   align-items: center;
   padding: 12px 40px;
   background: #ffffff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   font-family: "Segoe UI", sans-serif;
 }
 
@@ -558,7 +600,7 @@ body {
 
 .register-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .navbar {
@@ -566,13 +608,13 @@ body {
   justify-content: space-between;
   align-items: center;
   background: #ffffff;
-  padding: 18px 40px;   /* more padding for taller navbar */
-  font-size: 1.2rem;    /* base size for all text */
+  padding: 18px 40px; /* more padding for taller navbar */
+  font-size: 1.2rem; /* base size for all text */
 }
 
 /* Brand text */
 .brand-text {
-  font-size: 1.6rem;   /* bigger brand name */
+  font-size: 1.6rem; /* bigger brand name */
   font-weight: bold;
 }
 
@@ -587,12 +629,12 @@ body {
 /* Nav links */
 .nav-links {
   display: flex;
-  gap: 50px;           /* spacing between nav items */
+  gap: 50px; /* spacing between nav items */
   list-style: none;
 }
 
 .nav-links li {
-  font-size: 1.2rem;   /* increase size of links */
+  font-size: 1.2rem; /* increase size of links */
   cursor: pointer;
   color: #444;
   transition: color 0.2s ease;
@@ -606,7 +648,7 @@ body {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 25px;           /* spacing between elements */
+  gap: 25px; /* spacing between elements */
   font-size: 1.1rem;
 }
 
@@ -633,7 +675,8 @@ body {
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #eaf6ff url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/2000px-World_map_-_low_resolution.svg.png")
+  background: #eaf6ffbc
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-low_resolution.svg/2000px-World_map-_low_resolution.svg.png")
     no-repeat center center fixed;
   background-size: cover;
   color: #333;
@@ -649,6 +692,125 @@ body::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(234, 246, 255, 0.5); /* control opacity */
+  background: rgba(234, 246, 255, 0); /* control opacity */
   z-index: -1;
 }
+
+/* SOS Red Circle Button */
+.sos-circle {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.sos-circle:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
+
+/* Tiny inline hint */
+.sos-hint {
+  font-size: 8px;
+  font-weight: normal;
+  margin-left: 2px;
+  opacity: 0.8;
+}
+
+/* Monitoring Button (inline status) */
+.monitor-btn {
+  margin-left: 15px;
+  padding: 6px 10px;
+  border: 1px solid #007bff;
+  border-radius: 14px;
+  background: transparent;
+  color: #007bff;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.monitor-btn:hover {
+  background: #007bff;
+  color: white;
+}
+/* Status Banner */
+.status-banner {
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #ffe6e6;
+  color: #a10000;
+}
+
+/* SOS Actions after activation */
+.sos-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.sos-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.share-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* SOS Wrapper */
+.sos-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.sos-hint {
+  font-size: 8px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+/* SOS Circle (before activation) */
+.sos-circle {
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.sos-circle:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
+

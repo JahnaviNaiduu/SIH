@@ -5,7 +5,9 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-top">
-        <h2>SmartTourSafe</h2>
+        <h1>
+        YAAR
+      </h1>
         <p>
           Revolutionizing tourism safety with blockchain-verified digital
           identities, AI-powered risk assessment, and real-time emergency

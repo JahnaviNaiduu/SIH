@@ -1,0 +1,73 @@
+/* Safety Navigation Bar */
+.safety-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 600px;
+  background: white;
+  border-radius: 40px 40px 0 0;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+/* Monitoring Status */
+.status {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.status.online {
+  background: #e6f7ff;
+  color: #0077cc;
+  border: 1px solid #b3e0ff;
+}
+
+.status.offline {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+/* SOS Button */
+.sos-btn {
+  background: radial-gradient(circle, #ff4d4d, #cc0000);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px 26px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(204,0,0,0.4);
+}
+
+.sos-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(204,0,0,0.5);
+}
+
+/* Share Location */
+.share-btn {
+  background: linear-gradient(90deg, #0077cc, #00b4d8);
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 18px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.share-btn:hover {
+  transform: scale(1.1);
+}
