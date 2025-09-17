@@ -13,7 +13,9 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+
         <Footer />
+        
     </>
   );
 }

@@ -453,13 +453,13 @@ body {
 /* Navigation Links */
 .nav-links {
   display: flex;
-  gap: 28px;
+  gap: 15px;
   list-style: none;
 }
 
 .nav-links li {
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
   position: relative;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -675,8 +675,9 @@ body {
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #eaf6ff5f
-    url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/2000px-World_map_-_low_resolution.svg.png")
+  background: #eaf6ffbc
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/2000px-World_map_-_low_resolution.svg.png");
+
     no-repeat center center fixed;
   background-size: cover;
   color: #333;
@@ -695,3 +696,122 @@ body::after {
   background: rgba(234, 246, 255, 0); /* control opacity */
   z-index: -1;
 }
+
+/* SOS Red Circle Button */
+.sos-circle {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.sos-circle:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
+
+/* Tiny inline hint */
+.sos-hint {
+  font-size: 8px;
+  font-weight: normal;
+  margin-left: 2px;
+  opacity: 0.8;
+}
+
+/* Monitoring Button (inline status) */
+.monitor-btn {
+  margin-left: 15px;
+  padding: 6px 10px;
+  border: 1px solid #007bff;
+  border-radius: 14px;
+  background: transparent;
+  color: #007bff;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.monitor-btn:hover {
+  background: #007bff;
+  color: white;
+}
+/* Status Banner */
+.status-banner {
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #ffe6e6;
+  color: #a10000;
+}
+
+/* SOS Actions after activation */
+.sos-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.sos-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.share-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* SOS Wrapper */
+.sos-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.sos-hint {
+  font-size: 8px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+/* SOS Circle (before activation) */
+.sos-circle {
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.sos-circle:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
+
