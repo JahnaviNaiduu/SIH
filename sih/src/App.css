@@ -453,13 +453,13 @@ body {
 /* Navigation Links */
 .nav-links {
   display: flex;
-  gap: 28px;
+  gap: 15px;
   list-style: none;
 }
 
 .nav-links li {
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
   position: relative;
   cursor: pointer;
   transition: color 0.3s ease;

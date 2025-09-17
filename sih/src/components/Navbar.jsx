@@ -4,6 +4,7 @@ function Navbar() {
   const [language, setLanguage] = useState("English");
   const [status, setStatus] = useState("");
   const [sosActive, setSosActive] = useState(false);
+  const [monitoring, setMonitoring] = useState("");
 
   const handleLanguageChange = (e) => {
     setLanguage(e.target.value);
@@ -11,9 +12,18 @@ function Navbar() {
 
   // SOS click handler
   const handleSOS = () => {
-    alert("🚨 SOS Activated! Authorities have been notified.");
-    setStatus("🚨 SOS Triggered | Help is on the way");
-    setSosActive(true);
+    // Step 1: Trigger KYC confirmation
+    const isKycDone = window.confirm("⚠️ KYC verification required. Proceed?");
+    if (isKycDone) {
+      // Step 2: Direct to emergency dialer
+      window.location.href = "tel:101";
+
+      // Step 3: Update status
+      setStatus("🚨 SOS Triggered | Contacting Emergency Services (101)...");
+      setSosActive(true);
+    } else {
+      setStatus("❌ SOS Cancelled | KYC not completed");
+    }
   };
 
   // Share Location click handler
@@ -22,10 +32,14 @@ function Navbar() {
     setStatus("📍 Location Shared | Stay Safe");
   };
 
-  // Monitoring click handler
+  // Monitoring toggle handler
   const handleMonitoringPress = () => {
-    alert("📡 Monitoring Active: Live tracking started.");
-    setStatus("✅ Monitoring Active | You are in a Safe Zone");
+    if (monitoring === "✅ Monitoring Active | Safe Zone") {
+      setMonitoring("📶 Offline Mode Active");
+    } else {
+      setMonitoring("✅ Monitoring Active | Safe Zone");
+    }
+    setStatus(""); // clear SOS status when monitoring changes
   };
 
   return (
@@ -39,10 +53,12 @@ function Navbar() {
         <li>Itenary</li>
         <li>Maps</li>
         <li>Help</li>
+        <li>Profile</li>
 
         <li className="sos-wrapper">
           {!sosActive ? (
             <>
+             
               <button className="sos-circle" onClick={handleSOS}>
                 SOS
               </button>
@@ -61,7 +77,7 @@ function Navbar() {
 
         <li>
           <button className="monitor-btn" onClick={handleMonitoringPress}>
-            Monitoring
+            {monitoring ? monitoring : "Monitoring"}
           </button>
         </li>
       </ul>
@@ -83,7 +99,9 @@ function Navbar() {
       </div>
 
       {/* Status message inline */}
-      {status && <div className="status-banner">{status}</div>}
+      {(status || monitoring) && (
+        <div className="status-banner">{status || monitoring}</div>
+      )}
     </nav>
   );
 }
