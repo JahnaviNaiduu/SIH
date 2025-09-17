@@ -1,0 +1,54 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block title %}{{ title }} | {% if site_name %}{{ site_name }}{% else %}{% translate 'Django site admin' %}{% endif %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{% if site_header %}{{ site_header }}{% else %}{% translate 'Django administration' %}{% endif %}</a></h1>
+{% endblock %}
+
+{% block nav_global %}{% endblock %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <style>
+        #header {
+            background-color: #4CAF50; /* Green header */
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #site-name a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #user-tools {
+            color: white;
+        }
+        #user-tools a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+        #user-tools a:hover {
+            text-decoration: underline;
+        }
+        .module h2, .module caption {
+            background-color: #f8f9fa; /* Light background for module headers */
+            color: #333;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .button, input[type=submit], input[type=button], .submit-row input[type=submit] {
+            background-color: #007bff; /* Blue buttons */
+            border-color: #007bff;
+        }
+        .button:hover, input[type=submit]:hover, input[type=button]:hover, .submit-row input[type=submit]:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+{% endblock %}

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-top">
-        <h2>SmartTourSafe</h2>
+        <h2>YAAR</h2>
         <p>
           Revolutionizing tourism safety with blockchain-verified digital
           identities, AI-powered risk assessment, and real-time emergency
@@ -43,7 +43,10 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>🚨 In case of emergency, press the panic button in your SmartTourSafe app for instant help.</p>
+        <p>
+          🚨 In case of emergency, press the panic button in your SmartTourSafe
+          app for instant help.
+        </p>
       </div>
     </footer>
   );
