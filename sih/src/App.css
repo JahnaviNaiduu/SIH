@@ -676,7 +676,8 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #eaf6ffbc
-    url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-low_resolution.svg/2000px-World_map-_low_resolution.svg.png")
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/2000px-World_map_-_low_resolution.svg.png");
+
     no-repeat center center fixed;
   background-size: cover;
   color: #333;
